@@ -108,6 +108,7 @@ div.logo {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  border: 1px solid red;
 }
 
 .headerSkills, .headerWork {
@@ -115,6 +116,7 @@ div.logo {
   font-weight: 900;
   font-size: 36px;
   margin-bottom: 5px;
+  border: 1px solid rgb(162, 0, 255)
 }
 
 .subSkills {
@@ -127,6 +129,7 @@ div.logo {
   flex-shrink: 1;
   margin-bottom: 20px;
   flex-flow: row wrap;
+  border: 1px solid rgb(0, 255, 200)
 }
 .mainText {
   width: 300px;
@@ -134,6 +137,7 @@ div.logo {
   margin: 0px;
   padding: 20px;
   font-size: 24px;
+  border: 1px solid rgb(238, 255, 0)
 }
 
 .skillsList {
@@ -146,18 +150,21 @@ div.logo {
   list-style-type: circle;
   margin-left: 20px;
   font-size: 24px;
+  border: 1px solid rgb(255, 136, 0)
 }
 
 p.mainText {
   margin-right: 0;
   border: none;
   padding-bottom: 0px;
+  border: 1px solid rgb(55, 0, 255)
 }
 
 .listSkills {
   color: black;
   font-family: 'Lato', sans-serif;
   padding-left: 0px;
+  border: 1px solid rgb(43, 255, 0)
 }
 
 
@@ -178,31 +185,35 @@ p.mainText {
   flex-direction: column;
   margin-bottom: 50px;
   resize: none;
+  border: 1px solid red
 }
 
 .containerListWork {
-  display: flex;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "a a"
+  "b b"
+  "c c";
   justify-content: center;
   resize: none;
+  border: 1px solid rgb(0, 255, 200)
 }
 
-.listWork {
-  text-align: left;
-  list-style: none;
-  list-style-type: circle;
-  list-style-position: inside;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  resize: none;
-}
 
 .workItem {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 24px;
   resize: none;
+  border: 1px solid red
 
+}
+
+.work1, .work2, .work3 {
+  border: 1px solid rgb(43, 255, 0);
 }
 
 /*Contact*/
@@ -218,6 +229,7 @@ p.mainText {
     "d d";
     justify-content: center;
     align-items: center;
+    border: 1px solid rgb(0, 255, 200)
 }
 
 .getIn {
@@ -229,6 +241,7 @@ p.mainText {
   font-weight: 400;
   justify-content: center;
   margin-bottom: 0px;
+  border: 1px solid rgb(238, 255, 0)
 }
 
 .linkedIn {
@@ -237,6 +250,7 @@ p.mainText {
   scale: 25%;
   /*position: relative;
   left: 80px;*/
+  border: 1px solid rgb(55, 0, 255)
 }
 
 .phone {
@@ -246,6 +260,7 @@ p.mainText {
   text-align: center;
   /*position: relative;
   right:80px;*/
+  border: 1px solid rgb(255, 136, 0)
 }
 
 .containerButton {
@@ -253,6 +268,7 @@ p.mainText {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 }
 
 .contactButton {
@@ -300,4 +316,10 @@ p.mainText {
   text-align: center;
   font-weight: 100;
   margin: 20px 50px;
+}
+
+
+.skills, .work, .contact {
+  border: 1px solid red;
+  margin-bottom: 100px;
 }
