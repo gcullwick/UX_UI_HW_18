@@ -79,6 +79,7 @@ div.logo {
   border: solid #100b1f;
   /*border-width: 144px 35px 146px 36px;*/
   scale: 1.2;
+  margin-top: 100px;
 }
 
 .photo img {
@@ -88,7 +89,7 @@ div.logo {
 
 
 .about {
-  font-size: 4vw;
+  font-size: 3vmax;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   color: white;
