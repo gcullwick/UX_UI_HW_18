@@ -87,7 +87,7 @@ div.logo {
 
 
 .about {
-  font-size: 24px;
+  font-size: 1.2vw;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   width: 350px;
@@ -108,15 +108,13 @@ div.logo {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 
 .headerSkills, .headerWork {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
-  font-size: 36px;
-  margin-bottom: 5px;
-  border: 1px solid rgb(162, 0, 255)
+  font-size: 2vw;
+  margin-bottom: 20px;
 }
 
 .subSkills {
@@ -127,17 +125,15 @@ div.logo {
   flex-wrap: wrap;
   flex-grow: 1;
   flex-shrink: 1;
-  margin-bottom: 20px;
+  margin-bottom: 1.2vw;
   flex-flow: row wrap;
-  border: 1px solid rgb(0, 255, 200)
 }
 .mainText {
   width: 300px;
   font-family: 'Lato', sans-serif;
   margin: 0px;
   padding: 20px;
-  font-size: 24px;
-  border: 1px solid rgb(238, 255, 0)
+  font-size: 1.2vw;
 }
 
 .skillsList {
@@ -149,29 +145,22 @@ div.logo {
   margin-top: 0;
   list-style-type: circle;
   margin-left: 20px;
-  font-size: 24px;
-  border: 1px solid rgb(255, 136, 0)
+  font-size: 1.2vw;
 }
 
-p.mainText {
-  margin-right: 0;
-  border: none;
-  padding-bottom: 0px;
-  border: 1px solid rgb(55, 0, 255)
-}
+
 
 .listSkills {
   color: black;
   font-family: 'Lato', sans-serif;
   padding-left: 0px;
-  border: 1px solid rgb(43, 255, 0)
 }
 
 
 
 .thick {
   font-weight: 900;
-  font-size: 24px;
+  font-size: 1.2vw;
 }
 
 
@@ -185,7 +174,7 @@ p.mainText {
   flex-direction: column;
   margin-bottom: 50px;
   resize: none;
-  border: 1px solid red
+  flex-wrap: wrap;
 }
 
 .containerListWork {
@@ -199,27 +188,68 @@ p.mainText {
   "c c";
   justify-content: center;
   resize: none;
-  border: 1px solid rgb(0, 255, 200)
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.caseStudy {
+  border: solid 4px #100b1f;
+  background-color: #100b1f;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  padding: 10px;
+}
+
+.caseStudy:hover {
+  background-color: white;
+  border: solid 4px #100b1f;
+  color: #100b1f;
 }
 
 
 .workItem {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.2vw;
   resize: none;
-  border: 1px solid red
 
 }
 
 .work1, .work2, .work3 {
-  border: 1px solid rgb(43, 255, 0);
+  align-items: center;
+}
+
+.viewAll {
+  align-self: center;
+  margin-top: 100px;
+  height: 100px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  padding: 0px 25px;
+  background-color: #100b1f;
+  border: solid 4px #100b1f;
+  color: white;
+}
+
+.viewAll:hover {
+  background-color: white;
+  border: solid 4px #100b1f;
+  color: #100b1f;
+}
+
+.workImg img{
+  max-width: 350px;
+  max-height: 600px;
 }
 
 /*Contact*/
 
 .contactContainer {
   margin: 50px;
+  margin-top: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 200px 1fr;
@@ -229,7 +259,6 @@ p.mainText {
     "d d";
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(0, 255, 200)
 }
 
 .getIn {
@@ -237,11 +266,10 @@ p.mainText {
   display: flex;
   align-items: center;
   font-family: 'Raleway', sans-serif;
-  font-size: 32px;
+  font-size: 2vw;
   font-weight: 400;
   justify-content: center;
   margin-bottom: 0px;
-  border: 1px solid rgb(238, 255, 0)
 }
 
 .linkedIn {
@@ -250,7 +278,6 @@ p.mainText {
   scale: 25%;
   /*position: relative;
   left: 80px;*/
-  border: 1px solid rgb(55, 0, 255)
 }
 
 .phone {
@@ -260,7 +287,6 @@ p.mainText {
   text-align: center;
   /*position: relative;
   right:80px;*/
-  border: 1px solid rgb(255, 136, 0)
 }
 
 .containerButton {
@@ -275,7 +301,7 @@ p.mainText {
   grid-area: d;
   width: 250px;
   font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  font-size: 1.2vw;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -292,6 +318,7 @@ p.mainText {
   border: 2px solid black;
   cursor: pointer;
 }
+
 
 
 /*Footer*/
@@ -312,7 +339,7 @@ p.mainText {
   color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.2vw;
   text-align: center;
   font-weight: 100;
   margin: 20px 50px;
@@ -320,6 +347,5 @@ p.mainText {
 
 
 .skills, .work, .contact {
-  border: 1px solid red;
   margin-bottom: 100px;
 }
