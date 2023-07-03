@@ -73,6 +73,7 @@ div.logo {
   justify-content: center;
   flex-wrap: wrap;
   background-color: #100b1f;
+  min-width: 400px;
 }
 
 .photo {
@@ -181,21 +182,45 @@ div.logo {
   flex-wrap: wrap;
 }
 
-.containerListWork {
-  display: grid;
-  flex-direction: row;
-  grid-template-columns: 4fr 6fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "a b"
-  "c d"
-  "e f"
-  "g g";
-  justify-content: center;
-  resize: none;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0px 15px;
+
+
+@media screen and (min-width: 601px) {
+  .containerListWork {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f"
+    "g g";
+    justify-content: center;
+    resize: none;
+    align-items: center;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containerListWork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+  }
+
+  .workItem {
+    text-align: center;
+  }
+
+  .caseStudy {
+    margin-bottom: 50px;
+  }
+
+  .workImg {
+    margin-top: 100px;
+  }
 }
 
 .caseStudy {
@@ -321,7 +346,7 @@ work1 {
 }
 
 .number, .email {
-  font-size: 1.2vmax;
+  font-size: 2.5vmax;
 }
 
 .containerButton {
